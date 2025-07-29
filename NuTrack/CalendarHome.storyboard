@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_3" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Calendar Home View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="CalendarHomeStoryboard" id="Y6W-OH-hqX" customClass="CalendarHomeViewController" customModule="NuTrack" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="69" translatesAutoresizingMaskIntoConstraints="NO" id="ZWT-W7-yd4">
+                                <rect key="frame" x="16" y="194" width="370" height="506"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="t8z-hm-Axi">
+                                        <rect key="frame" x="0.0" y="0.0" width="370" height="46"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qkz-6A-k1J">
+                                                <rect key="frame" x="0.0" y="0.0" width="370" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="LYm-WW-Mbz"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
+                                                <color key="textColor" name="OppositeBackground"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cEO-ao-PfG">
+                                                <rect key="frame" x="0.0" y="31" width="370" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="PoJ-EP-nnb"/>
+                                                </constraints>
+                                                <color key="progressTintColor" name="OppositeBackground"/>
+                                            </progressView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="i8Z-dm-ssd">
+                                        <rect key="frame" x="0.0" y="115" width="370" height="46"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Protein" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ceQ-Kc-dof">
+                                                <rect key="frame" x="0.0" y="0.0" width="370" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="TzA-7c-TGt"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
+                                                <color key="textColor" name="OppositeBackground"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Fqk-bo-uW8">
+                                                <rect key="frame" x="0.0" y="31" width="370" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="zRB-fg-UYt"/>
+                                                </constraints>
+                                                <color key="progressTintColor" name="OppositeBackground"/>
+                                            </progressView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="wtY-7w-JIv">
+                                        <rect key="frame" x="0.0" y="230" width="370" height="46"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carbs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5LD-SR-b6y">
+                                                <rect key="frame" x="0.0" y="0.0" width="370" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="ATM-xF-db0"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
+                                                <color key="textColor" name="OppositeBackground"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fQE-Yf-ron">
+                                                <rect key="frame" x="0.0" y="31" width="370" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="hT0-C5-3Sh"/>
+                                                </constraints>
+                                                <color key="progressTintColor" name="OppositeBackground"/>
+                                            </progressView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="bOh-hJ-11a">
+                                        <rect key="frame" x="0.0" y="345" width="370" height="46"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sugars" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBf-Kf-kEJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="370" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="rgH-my-mjY"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
+                                                <color key="textColor" name="OppositeBackground"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gCP-sV-sty">
+                                                <rect key="frame" x="0.0" y="31" width="370" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="NhN-TK-vr9"/>
+                                                </constraints>
+                                                <color key="progressTintColor" name="OppositeBackground"/>
+                                            </progressView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Duc-Hh-sHI">
+                                        <rect key="frame" x="0.0" y="460" width="370" height="46"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fats" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6e-kB-izA">
+                                                <rect key="frame" x="0.0" y="0.0" width="370" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="ikZ-l8-imE"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
+                                                <color key="textColor" name="OppositeBackground"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Kzt-Ai-Tdi">
+                                                <rect key="frame" x="0.0" y="31" width="370" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="IAo-AZ-OWt"/>
+                                                </constraints>
+                                                <color key="progressTintColor" name="OppositeBackground"/>
+                                            </progressView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="B6K-Ga-RzM">
+                                <rect key="frame" x="16" y="116" width="370" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="ITA-vw-D8O"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="dateChanged:" destination="Y6W-OH-hqX" eventType="valueChanged" id="lCd-Vg-T33"/>
+                                </connections>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZp-kB-Oih">
+                                <rect key="frame" x="0.0" y="115.33333333333333" width="141.66666666666666" height="34.333333333333329"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Show Food Log"/>
+                                <connections>
+                                    <segue destination="3jJ-Kg-jdH" kind="show" identifier="FoodLogSegue" id="xh0-EA-lhc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="BackgroundColors"/>
+                        <constraints>
+                            <constraint firstItem="kZp-kB-Oih" firstAttribute="centerY" secondItem="B6K-Ga-RzM" secondAttribute="centerY" id="0ha-9d-5Qr"/>
+                            <constraint firstItem="ZWT-W7-yd4" firstAttribute="top" secondItem="B6K-Ga-RzM" secondAttribute="bottom" constant="45" id="3Lc-JF-Mhl"/>
+                            <constraint firstItem="B6K-Ga-RzM" firstAttribute="trailing" secondItem="5EZ-qb-Rvc" secondAttribute="trailingMargin" id="Emb-7B-abb"/>
+                            <constraint firstItem="B6K-Ga-RzM" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="Nrb-Zz-uav"/>
+                            <constraint firstItem="B6K-Ga-RzM" firstAttribute="leading" secondItem="ZWT-W7-yd4" secondAttribute="leading" id="PjV-OB-fUQ"/>
+                            <constraint firstItem="kZp-kB-Oih" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="S11-56-r2C"/>
+                            <constraint firstItem="B6K-Ga-RzM" firstAttribute="trailing" secondItem="ZWT-W7-yd4" secondAttribute="trailing" id="T4A-YL-E5w"/>
+                            <constraint firstItem="B6K-Ga-RzM" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leadingMargin" id="eZJ-kP-Mhf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fg0-sM-gNc"/>
+                    <connections>
+                        <outlet property="caloriesLabel" destination="qkz-6A-k1J" id="riO-8Y-4ll"/>
+                        <outlet property="caloriesProgress" destination="cEO-ao-PfG" id="Iic-lm-Pbk"/>
+                        <outlet property="carbsLabel" destination="5LD-SR-b6y" id="RvU-W8-gz7"/>
+                        <outlet property="carbsProgress" destination="fQE-Yf-ron" id="KI5-Je-wye"/>
+                        <outlet property="datePicker" destination="B6K-Ga-RzM" id="wbP-OM-CqF"/>
+                        <outlet property="fatsLabel" destination="b6e-kB-izA" id="1gZ-yL-q3N"/>
+                        <outlet property="fatsProgress" destination="Kzt-Ai-Tdi" id="YOv-va-euk"/>
+                        <outlet property="nutritionStack" destination="ZWT-W7-yd4" id="jXk-Vm-dQK"/>
+                        <outlet property="proteinProgress" destination="Fqk-bo-uW8" id="jF2-Fd-P4y"/>
+                        <outlet property="proteinlabel" destination="ceQ-Kc-dof" id="wKc-l7-oo9"/>
+                        <outlet property="sugarLabel" destination="KBf-Kf-kEJ" id="wyC-PS-EWP"/>
+                        <outlet property="sugarsProgress" destination="gCP-sV-sty" id="EHI-Y5-T3G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1001" y="-35"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IDo-XC-1hn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="h8q-OI-to0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oUn-Yl-n5d">
+                        <rect key="frame" x="0.0" y="62" width="402" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="dfr-cn-7Q4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4RE-tf-bjS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="123.88059701492537" y="-35.011441647597252"/>
+        </scene>
+        <!--Food Log Table View Controller-->
+        <scene sceneID="KSG-L5-8p2">
+            <objects>
+                <viewController storyboardIdentifier="HomeStoryboard" id="3jJ-Kg-jdH" customClass="FoodLogTableViewController" customModule="NuTrack" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nh8-dR-L79">
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NuTrackLogoPNG" translatesAutoresizingMaskIntoConstraints="NO" id="LGG-bB-fe1">
+                                <rect key="frame" x="151" y="96" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="C0u-ER-Fwc"/>
+                                    <constraint firstAttribute="width" constant="100" id="Gj2-4Y-OOJ"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="MKq-U0-jba">
+                                <rect key="frame" x="5" y="204" width="392" height="636"/>
+                                <color key="backgroundColor" name="BackgroundColors"/>
+                                <color key="separatorColor" name="BackgroundColors"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchResultCell" rowHeight="200" id="mY6-Z7-zuY" customClass="SearchResultCell" customModule="NuTrack" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="392" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mY6-Z7-zuY" id="Zrt-wV-SbR">
+                                            <rect key="frame" x="0.0" y="0.0" width="392" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r3D-wt-aCl">
+                                                    <rect key="frame" x="215" y="0.0" width="225" height="100"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Food" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHJ-uK-uIr">
+                                                    <rect key="frame" x="20" y="91.666666666666671" width="198" height="17"/>
+                                                    <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                                    <color key="textColor" name="BackgroundColors"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="dHJ-uK-uIr" firstAttribute="centerY" secondItem="Zrt-wV-SbR" secondAttribute="centerY" id="ucX-Iv-U2Q"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" name="BackgroundColors"/>
+                                        <connections>
+                                            <outlet property="foodImageView" destination="r3D-wt-aCl" id="RvD-fl-8a5"/>
+                                            <outlet property="foodNameLabel" destination="dHJ-uK-uIr" id="tjH-7o-2QR"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hKp-2l-Dqw"/>
+                        <color key="backgroundColor" name="BackgroundColors"/>
+                        <constraints>
+                            <constraint firstItem="MKq-U0-jba" firstAttribute="leading" secondItem="hKp-2l-Dqw" secondAttribute="leading" constant="5" id="A3m-NF-jQl"/>
+                            <constraint firstItem="MKq-U0-jba" firstAttribute="top" secondItem="LGG-bB-fe1" secondAttribute="bottom" constant="8" id="EeN-Mf-uwq"/>
+                            <constraint firstItem="MKq-U0-jba" firstAttribute="bottom" secondItem="hKp-2l-Dqw" secondAttribute="bottom" id="MgK-1K-QzO"/>
+                            <constraint firstItem="LGG-bB-fe1" firstAttribute="centerX" secondItem="Nh8-dR-L79" secondAttribute="centerX" id="Uxk-7o-wwp"/>
+                            <constraint firstItem="LGG-bB-fe1" firstAttribute="centerX" secondItem="MKq-U0-jba" secondAttribute="centerX" id="i18-3A-i2z"/>
+                            <constraint firstItem="LGG-bB-fe1" firstAttribute="top" secondItem="Nh8-dR-L79" secondAttribute="topMargin" constant="-10" id="nJg-S4-tfa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zJ5-yQ-6vg"/>
+                    <connections>
+                        <outlet property="tableView" destination="MKq-U0-jba" id="2hu-hu-jJg"/>
+                        <segue destination="XpW-l0-E5V" kind="show" identifier="showFoodInfo" id="D6z-YC-TdB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kKY-ta-CrZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1945" y="-35"/>
+        </scene>
+        <!--Food Log Info View Controller-->
+        <scene sceneID="iXX-Uy-Aqy">
+            <objects>
+                <viewController storyboardIdentifier="bcode" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XpW-l0-E5V" customClass="FoodLogInfoViewController" customModule="NuTrack" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0hw-SA-NKl">
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ElP-af-SgB">
+                                <rect key="frame" x="0.0" y="106" width="402" height="768"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ahp-4n-ygi">
+                                        <rect key="frame" x="0.0" y="0.0" width="402" height="750"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="NuTrackLogoPNG" translatesAutoresizingMaskIntoConstraints="NO" id="6id-cp-Eb0">
+                                                <rect key="frame" x="151" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="P3N-Kt-c0v"/>
+                                                    <constraint firstAttribute="width" constant="100" id="Pal-B2-WmY"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCl-YG-YRm" userLabel="FoodName">
+                                                <rect key="frame" x="30" y="115" width="342" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="GoZ-i5-trZ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="20"/>
+                                                <color key="textColor" name="OppositeBackground"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="Es7-i9-Xzl">
+                                                <rect key="frame" x="30" y="150" width="200" height="600"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxC-Ys-bND">
+                                                        <rect key="frame" x="0.0" y="0.0" width="200" height="47"/>
+                                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                                        <color key="textColor" name="OppositeBackground"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Protein:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aNu-2B-jQB">
+                                                        <rect key="frame" x="0.0" y="92" width="200" height="47.333333333333343"/>
+                                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                                        <color key="textColor" name="OppositeBackground"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carbohydrates:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3px-2H-18E">
+                                                        <rect key="frame" x="0.0" y="184.33333333333331" width="200" height="47"/>
+                                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                                        <color key="textColor" name="OppositeBackground"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Fat:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgA-7r-77O">
+                                                        <rect key="frame" x="0.0" y="276.33333333333337" width="200" height="47.333333333333314"/>
+                                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                                        <color key="textColor" name="OppositeBackground"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sugars:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L9a-WZ-nbJ">
+                                                        <rect key="frame" x="0.0" y="368.66666666666663" width="200" height="47"/>
+                                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                                        <color key="textColor" name="OppositeBackground"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFz-e0-ebb">
+                                                        <rect key="frame" x="0.0" y="460.66666666666663" width="200" height="47.333333333333314"/>
+                                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                                        <color key="textColor" name="OppositeBackground"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H1F-Aq-oYd">
+                                                        <rect key="frame" x="0.0" y="553" width="200" height="47"/>
+                                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                                        <color key="textColor" name="OppositeBackground"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="BackgroundColors"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="600" id="iXT-XG-eOg"/>
+                                                    <constraint firstAttribute="width" constant="200" id="oqw-6e-B5d"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="bottom" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="g4j-Sy-X0N">
+                                                <rect key="frame" x="172" y="150" width="200" height="600"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n9o-Be-qzP">
+                                                        <rect key="frame" x="150" y="0.0" width="50" height="47"/>
+                                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                                        <color key="textColor" name="OppositeBackground"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NVy-Vq-Mjp">
+                                                        <rect key="frame" x="150" y="92" width="50" height="47.333333333333343"/>
+                                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                                        <color key="textColor" name="OppositeBackground"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymD-6Z-Sbq">
+                                                        <rect key="frame" x="150" y="184.33333333333331" width="50" height="47"/>
+                                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                                        <color key="textColor" name="OppositeBackground"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I8s-Zc-Abg">
+                                                        <rect key="frame" x="150" y="276.33333333333337" width="50" height="47.333333333333314"/>
+                                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                                        <color key="textColor" name="OppositeBackground"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hiK-Zi-d4E">
+                                                        <rect key="frame" x="150" y="368.66666666666663" width="50" height="47"/>
+                                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                                        <color key="textColor" name="OppositeBackground"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dk2-2U-zBj">
+                                                        <rect key="frame" x="150" y="460.66666666666663" width="50" height="47.333333333333314"/>
+                                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                                        <color key="textColor" name="OppositeBackground"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I21-qy-xsS">
+                                                        <rect key="frame" x="150" y="553" width="50" height="47"/>
+                                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                                        <color key="textColor" name="OppositeBackground"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="BackgroundColors"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="600" id="ecX-Ec-W8J"/>
+                                                    <constraint firstAttribute="width" constant="200" id="jOi-nq-qBp"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" name="BackgroundColors"/>
+                                        <constraints>
+                                            <constraint firstItem="Es7-i9-Xzl" firstAttribute="leading" secondItem="Ahp-4n-ygi" secondAttribute="leading" constant="30" id="1uX-MP-N4S"/>
+                                            <constraint firstItem="6id-cp-Eb0" firstAttribute="top" secondItem="Ahp-4n-ygi" secondAttribute="top" id="71f-9O-ixG"/>
+                                            <constraint firstItem="6id-cp-Eb0" firstAttribute="centerX" secondItem="Ahp-4n-ygi" secondAttribute="centerX" id="J4b-R7-qzD"/>
+                                            <constraint firstAttribute="trailing" secondItem="g4j-Sy-X0N" secondAttribute="trailing" constant="30" id="KQg-gd-XRi"/>
+                                            <constraint firstItem="PCl-YG-YRm" firstAttribute="leading" secondItem="Ahp-4n-ygi" secondAttribute="leading" constant="30" id="NQ0-cp-ko6"/>
+                                            <constraint firstItem="g4j-Sy-X0N" firstAttribute="top" secondItem="PCl-YG-YRm" secondAttribute="bottom" constant="10" id="Na3-Qw-LCV"/>
+                                            <constraint firstAttribute="trailing" secondItem="PCl-YG-YRm" secondAttribute="trailing" constant="30" id="Vdh-XX-QrJ"/>
+                                            <constraint firstItem="Es7-i9-Xzl" firstAttribute="top" secondItem="PCl-YG-YRm" secondAttribute="bottom" constant="10" id="dGL-fq-Ui3"/>
+                                            <constraint firstAttribute="height" constant="750" id="hzJ-gx-LVB"/>
+                                            <constraint firstItem="PCl-YG-YRm" firstAttribute="top" secondItem="6id-cp-Eb0" secondAttribute="bottom" constant="15" id="v5T-Dh-UR2"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Ahp-4n-ygi" secondAttribute="trailing" id="5mM-kg-k6S"/>
+                                    <constraint firstItem="Ahp-4n-ygi" firstAttribute="top" secondItem="ElP-af-SgB" secondAttribute="top" id="Bff-dT-BTo"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ahp-4n-ygi" secondAttribute="bottom" constant="18" id="cmV-I9-HB3"/>
+                                    <constraint firstItem="Ahp-4n-ygi" firstAttribute="leading" secondItem="ElP-af-SgB" secondAttribute="leading" id="vZB-yh-dgO"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="X52-41-GSB"/>
+                        <color key="backgroundColor" name="BackgroundColors"/>
+                        <constraints>
+                            <constraint firstItem="ElP-af-SgB" firstAttribute="trailing" secondItem="X52-41-GSB" secondAttribute="trailing" id="Dwp-s5-knX"/>
+                            <constraint firstItem="Ahp-4n-ygi" firstAttribute="width" secondItem="0hw-SA-NKl" secondAttribute="width" id="EV7-Or-DxX"/>
+                            <constraint firstItem="ElP-af-SgB" firstAttribute="top" secondItem="X52-41-GSB" secondAttribute="top" id="Fdl-1L-skA"/>
+                            <constraint firstAttribute="bottom" secondItem="ElP-af-SgB" secondAttribute="bottom" id="bpx-9a-Z0s"/>
+                            <constraint firstItem="ElP-af-SgB" firstAttribute="leading" secondItem="X52-41-GSB" secondAttribute="leading" id="she-rx-iHc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fzB-Lq-RI4"/>
+                    <connections>
+                        <outlet property="calorieLabel" destination="n9o-Be-qzP" id="CqO-e0-7WZ"/>
+                        <outlet property="carbLabel" destination="ymD-6Z-Sbq" id="UdQ-f8-NOY"/>
+                        <outlet property="fatLabel" destination="I8s-Zc-Abg" id="9rj-aB-Uri"/>
+                        <outlet property="foodLabel" destination="PCl-YG-YRm" id="pQV-xb-cJO"/>
+                        <outlet property="proteinLabel" destination="NVy-Vq-Mjp" id="Gd0-y9-d0Q"/>
+                        <outlet property="sugarLabel" destination="hiK-Zi-d4E" id="21o-q3-QOw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aYQ-wV-ccB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2895.5223880597014" y="-35.011441647597252"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="NuTrackLogoPNG" width="688" height="689"/>
+        <namedColor name="BackgroundColors">
+            <color red="0.86274509803921573" green="0.90196078431372551" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="OppositeBackground">
+            <color red="0.20000000000000001" green="0.33725490196078434" blue="0.52549019607843139" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

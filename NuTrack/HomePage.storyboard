@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search Results Table View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="HomeStoryboard" id="Y6W-OH-hqX" customClass="SearchResultsTableViewController" customModule="NuTrack" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NuTrackLogoPNG" translatesAutoresizingMaskIntoConstraints="NO" id="HxM-nB-L1O">
+                                <rect key="frame" x="170" y="52" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="6ZH-Fs-eTb"/>
+                                    <constraint firstAttribute="height" constant="100" id="e8G-SI-A7e"/>
+                                </constraints>
+                            </imageView>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Food Name" translatesAutoresizingMaskIntoConstraints="NO" id="jmP-Yd-2m1">
+                                <rect key="frame" x="20" y="182" width="400" height="56"/>
+                                <color key="backgroundColor" name="BackgroundColors"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="CKb-Hz-psi"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="JZA-Gv-j1w"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Fsm-oO-hm0">
+                                <rect key="frame" x="5" y="287" width="430" height="635"/>
+                                <color key="backgroundColor" name="BackgroundColors"/>
+                                <color key="separatorColor" name="BackgroundColors"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchResultCell" rowHeight="200" id="We7-91-Soa" customClass="SearchResultCell" customModule="NuTrack" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="430" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="We7-91-Soa" id="Aer-mb-6VX">
+                                            <rect key="frame" x="0.0" y="0.0" width="430" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lCo-yD-7GF">
+                                                    <rect key="frame" x="215" y="0.0" width="225" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="225" id="bdh-PF-keM"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FiN-px-G4G">
+                                                    <rect key="frame" x="20" y="100" width="198" height="0.0"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="198" id="ChC-9n-emT"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                                    <color key="textColor" name="BackgroundColors"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="FiN-px-G4G" firstAttribute="bottom" secondItem="lCo-yD-7GF" secondAttribute="bottom" id="Afa-Y0-GY3"/>
+                                                <constraint firstItem="lCo-yD-7GF" firstAttribute="top" secondItem="Aer-mb-6VX" secondAttribute="top" id="Koe-Dk-4xJ"/>
+                                                <constraint firstItem="FiN-px-G4G" firstAttribute="leading" secondItem="Aer-mb-6VX" secondAttribute="leadingMargin" id="Lth-nC-dGi"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="lCo-yD-7GF" secondAttribute="trailing" constant="-30" id="TGt-oV-VuG"/>
+                                                <constraint firstItem="FiN-px-G4G" firstAttribute="centerY" secondItem="Aer-mb-6VX" secondAttribute="centerY" id="TbP-Va-VKv"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" name="BackgroundColors"/>
+                                        <connections>
+                                            <outlet property="foodImageView" destination="lCo-yD-7GF" id="745-mA-LcA"/>
+                                            <outlet property="foodNameLabel" destination="FiN-px-G4G" id="ws7-Ud-LYd"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="X8r-zM-mJD">
+                                <rect key="frame" x="145.66666666666666" y="248" width="148.99999999999997" height="32"/>
+                                <segments>
+                                    <segment title="Common"/>
+                                    <segment title="Branded"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentChanged:" destination="Y6W-OH-hqX" eventType="valueChanged" id="Mqe-9c-jsK"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="BackgroundColors"/>
+                        <constraints>
+                            <constraint firstItem="jmP-Yd-2m1" firstAttribute="top" secondItem="HxM-nB-L1O" secondAttribute="bottom" constant="30" id="3Jk-Nz-uDH"/>
+                            <constraint firstItem="jmP-Yd-2m1" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="3wT-CI-q6v"/>
+                            <constraint firstItem="jmP-Yd-2m1" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="N5N-3U-5DZ"/>
+                            <constraint firstItem="Fsm-oO-hm0" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="OSl-OW-Uwu"/>
+                            <constraint firstItem="X8r-zM-mJD" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="RuL-9S-A5L"/>
+                            <constraint firstItem="HxM-nB-L1O" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="XXV-eE-QK3"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="jmP-Yd-2m1" secondAttribute="trailing" constant="20" id="Z8y-dw-qse"/>
+                            <constraint firstItem="HxM-nB-L1O" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="-10" id="bxs-30-fS3"/>
+                            <constraint firstAttribute="trailing" secondItem="Fsm-oO-hm0" secondAttribute="trailing" constant="5" id="f6Q-ed-Xqj"/>
+                            <constraint firstItem="Fsm-oO-hm0" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="5" id="jNq-1k-mRJ"/>
+                            <constraint firstItem="Fsm-oO-hm0" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="nL1-y3-Ocv"/>
+                            <constraint firstItem="Fsm-oO-hm0" firstAttribute="top" secondItem="X8r-zM-mJD" secondAttribute="bottom" constant="8" id="sFf-SQ-PGg"/>
+                            <constraint firstItem="X8r-zM-mJD" firstAttribute="top" secondItem="jmP-Yd-2m1" secondAttribute="bottom" constant="10" id="voc-bY-ClW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="foodTypeSegmentedControl" destination="X8r-zM-mJD" id="yDm-Hl-kvi"/>
+                        <outlet property="searchBar" destination="jmP-Yd-2m1" id="eFh-dF-KAi"/>
+                        <outlet property="tableView" destination="Fsm-oO-hm0" id="mwI-JY-zpo"/>
+                        <segue destination="rH0-T1-BkK" kind="show" identifier="showNutritionFacts" id="CmS-9n-DBW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8.1818181818181817" y="-14.435146443514645"/>
+        </scene>
+        <!--bcode-->
+        <scene sceneID="g6M-z7-4OB">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="bcode" storyboardName="ScanPage" referencedIdentifier="bcode" id="rH0-T1-BkK" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="17o-Jx-1O0"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TMB-D9-HDM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="254" y="468"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="NuTrackLogoPNG" width="688" height="689"/>
+        <namedColor name="BackgroundColors">
+            <color red="0.86274509803921573" green="0.90196078431372551" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
